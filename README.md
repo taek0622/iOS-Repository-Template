@@ -1,7 +1,7 @@
 # iOS-Repository-Template
 이 레포지토리는 iOS 프로젝트에 사용하기 위한 템플릿 레포지토리입니다.
 
-## 사용방법
+## 사용 방법
 
 아래의 세가지 방법 중 하나를 선택하여 사용하시면 됩니다.
 
@@ -32,3 +32,6 @@
 4. 첫번째 commit을 생성한다.
 
    `git commit -a -m "Initial commit"`
+
+## 사용 가능한 범위
+- Repository Template을 사용했을 때, 복사되는 범위는 현재 프로젝트의 디렉토리 및 구조, 브랜치 등까지 입니다. Issue나 Pull request의 Labels, Wiki, Project, Actions 등은 복사되지 않습니다.
