@@ -8,8 +8,8 @@
 ### 방법 1. Fork해서 사용하기
 
 1. 이 Repository를 Fork한다.
-2. New 버튼을 눌러서 새 Repository를 .
-3. Template에서 이 Repository를 선택한다.
+2. [New](https://github.com/new) 버튼을 눌러서 새 Repository를 생성한다.
+3. Repository Template에서 이 Repository Template을 선택한다.
 
 ### 방법 2. Fork 없이 사용하기
 
