@@ -8,12 +8,12 @@
 ### 방법 1. Fork해서 사용하기
 
 1. 이 Repository를 Fork한다.
-2. 새 Repository 만들기 버튼을 누른다.
+2. New 버튼을 눌러서 새 Repository를 .
 3. Template에서 이 Repository를 선택한다.
 
 ### 방법 2. Fork 없이 사용하기
 
-1. [이 템플릿 사용하기](https://github.com/taek0622/iOS-Repository-Template/generate) 버튼을 눌러서 새 Repository를 만든다.
+1. [Use this template](https://github.com/taek0622/iOS-Repository-Template/generate) 버튼을 눌러서 새 Repository를 만든다.
 
 ### 방법 3. Github Template 없이 사용하기 (비추천)
 
