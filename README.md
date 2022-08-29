@@ -32,6 +32,18 @@
 4. 첫번째 commit을 생성한다.
 
    `git commit -a -m "Initial commit"`
+   
+## .gitmessage 사용 방법
+
+- 프로젝트를 Clone 받은 후 터미널 상에서 프로젝트 경로로 들어가서 아래의 명령어를 사용하여 `.gitmessage` 사용
+```shell
+git config --global commit.template .github/.gitmessage
+```
+- 위의 명령어 실행 후 `git commit`을 할 때는 아래와 같이 사용할 수 있음
+<img width="802" alt="스크린샷 2022-08-07 18 10 05" src="https://user-images.githubusercontent.com/81027256/183284158-9ef715a0-4045-487b-8441-c3b8b2cf7547.png">
+<img width="922" alt="스크린샷 2022-08-07 18 10 14" src="https://user-images.githubusercontent.com/81027256/183284160-229ebf0e-d5f0-4353-8c58-7af44e0b0107.png">
+<img width="922" alt="스크린샷 2022-08-07 18 11 12" src="https://user-images.githubusercontent.com/81027256/183284179-438d0f7b-cbd9-4816-90de-57b1f94f8b2e.png">
+<img width="810" alt="스크린샷 2022-08-07 18 11 22" src="https://user-images.githubusercontent.com/81027256/183284284-d84b54ab-49f9-485d-9531-b1c5a3b5d92e.png">
 
 ## 사용 가능한 범위
 - Repository Template을 사용했을 때, 복사되는 범위는 현재 프로젝트의 디렉토리 및 구조, 브랜치 등까지 입니다. Issue나 Pull request의 Labels, Wiki, Project, Actions 등은 복사되지 않습니다.
