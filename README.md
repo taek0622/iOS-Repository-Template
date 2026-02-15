@@ -94,6 +94,14 @@ Tuist 프로젝트 사용시 몇 가지 수정해야 하는 부분이 있습니�
   - `WRITEYOURPROJECTTests.swift` 부분을 `NewProjectNameTests.swift`로 변경합니다.
   - 파일 내부의 import는 `import NewProjectName`로, struct 이름은 `NewProjectNameTests`로 변경합니다.
 
+이후 아래의 명령어로 프로젝트를 시작합니다.
+
+```bash
+tuist generate
+```
+
+
+
 ## 레이블 구성
 
 이 레포지토리의 이슈 템플릿은 크게 아래의 9가지 레이블을 사용합니다.
