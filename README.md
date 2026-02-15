@@ -83,7 +83,7 @@ Tuist 프로젝트 사용시 몇 가지 수정해야 하는 부분이 있습니�
 
 - `Project.swift` 내용 수정
   - 파일 내부에서 `#[WRITE_YOUR_PROJECT_NAME]`이라고 적혀있는 부분을 모두 본인의 `NewProjectName`으로 변경합니다.
-  - `dev.tuist.projectname`이라고 적힌 `bundleId`를 모두 자신이 원하는 bundleId로 변경합니다. (ex. `com.example.newprojectname`)
+  - `dev.tuist.projectname`와 `dev.tuist.projectnameTests`라고 적힌 `bundleId`를 모두 자신이 원하는 bundleId로 적절하게 변경합니다. (ex. `com.example.newprojectname`) 이때, 프로젝트와 테스트의 bundleId가 같으면 안됩니다.
 - `Tuist/Package.swift` 내용 수정
   - 파일 내부에서 `#[WRITE_YOUR_PROJECT_NAME]`라고 적힌 부분을 `NewProjectName`으로 변경합니다.
 

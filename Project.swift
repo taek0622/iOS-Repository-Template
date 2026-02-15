@@ -26,7 +26,7 @@ let project = Project(
             name: "#[WRITE_YOUR_PROJECT_NAME]Tests",
             destinations: .iOS,
             product: .unitTests,
-            bundleId: "dev.tuist.projectname",
+            bundleId: "dev.tuist.projectnameTests",
             infoPlist: .default,
             buildableFolders: [
                 "App/Tests"
