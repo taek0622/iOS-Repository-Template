@@ -94,15 +94,17 @@ Tuist 프로젝트 사용시 몇 가지 수정해야 하는 부분이 있습니�
   - `WRITEYOURPROJECTTests.swift` 부분을 `NewProjectNameTests.swift`로 변경합니다.
   - 파일 내부의 import는 `import NewProjectName`로, struct 이름은 `NewProjectNameTests`로 변경합니다.
 
-## 태그 구성
+## 레이블 구성
 
-이 레포지토리의 이슈 템플릿은 크게 아래의 9가지 태그를 사용합니다.
+이 레포지토리의 이슈 템플릿은 크게 아래의 9가지 레이블을 사용합니다.
+깃허브에서 기본적으로 이러한 레이블을 추가해주지 않으므로, 처음 한 번은 직접 아래의 레이블들을 레포지토리에 추가해주셔야 합니다.
 
 - `type: feature`: 새로운 기능 추가
 - `type: enhancement`: 기존 기능 개선
 - `type: refactor`: 동작 변경 없는 리팩토링 작업
 - `type: chore`: 동작 변경 없는 설정 관리 작업(빌드/CI/의존성/스크립트 등)
 - `type: design`: UI/UX 디자인 변경(화면/컴포넌트/인터랙션)
+- `type: bug`: 버그 재현/원인/수정 범위 기록
 - `type: docs`: 문서 작업(README/가이드/API 등)
 - `type: test`: 테스트 추가/보강/수정
 - `type: spike`: 조사/프로토타입/기술 검증
