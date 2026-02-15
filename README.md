@@ -100,8 +100,6 @@ Tuist 프로젝트 사용시 몇 가지 수정해야 하는 부분이 있습니�
 tuist generate
 ```
 
-
-
 ## 레이블 구성
 
 이 레포지토리의 이슈 템플릿은 크게 아래의 9가지 레이블을 사용합니다.
@@ -116,6 +114,14 @@ tuist generate
 - `type: docs`: 문서 작업(README/가이드/API 등)
 - `type: test`: 테스트 추가/보강/수정
 - `type: spike`: 조사/프로토타입/기술 검증
+
+## 질문/논의 수정 방법
+
+이슈의 질문/논의 버튼을 사용하기 위해 수정해야 하는 부분입니다.
+
+- `.github/ISSUE_TEMPLATE/config.yml` 내용 수정
+  - `url`의 `<OWNER>`를 자신의 github id 혹은 organization id로 변경합니다.
+  - `<REPO>`를 현재 레포지토리 이름으로 변경합니다.
 
 ## .gitmessage 사용 방법
 
