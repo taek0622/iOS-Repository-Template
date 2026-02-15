@@ -69,7 +69,7 @@ git config --global commit.template .github/.gitmessage
 <img alt="스크린샷2" src="https://github.com/user-attachments/assets/62c43a2e-d3d3-49ce-9850-dddd85592013">
 
 ```bash
-git push
+> git push
 ```
 
 
