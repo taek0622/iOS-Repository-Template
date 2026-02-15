@@ -33,6 +33,24 @@
 
    `git commit -a -m "Initial commit"`
    
+
+
+
+## 태그 구성
+
+이 레포지토리의 이슈 템플릿은 크게 아래의 9가지 태그를 사용합니다.
+
+- `type: feature`: 새로운 기능 추가
+- `type: enhancement`: 기존 기능 개선
+- `type: refactor`: 동작 변경 없는 리팩토링 작업
+- `type: chore`: 동작 변경 없는 설정 관리 작업(빌드/CI/의존성/스크립트 등)
+- `type: design`: UI/UX 디자인 변경(화면/컴포넌트/인터랙션)
+- `type: docs`: 문서 작업(README/가이드/API 등)
+- `type: test`: 테스트 추가/보강/수정
+- `type: spike`: 조사/프로토타입/기술 검증
+
+
+
 ## .gitmessage 사용 방법
 
 - 프로젝트를 Clone 받은 후 터미널 상에서 프로젝트 경로로 들어가서 아래의 명령어를 사용하여 `.gitmessage` 사용
@@ -40,10 +58,21 @@
 git config --global commit.template .github/.gitmessage
 ```
 - 위의 명령어 실행 후 `git commit`을 할 때는 아래와 같이 사용할 수 있음
-<img width="802" alt="스크린샷 2022-08-07 18 10 05" src="https://user-images.githubusercontent.com/81027256/183284158-9ef715a0-4045-487b-8441-c3b8b2cf7547.png">
-<img width="922" alt="스크린샷 2022-08-07 18 10 14" src="https://user-images.githubusercontent.com/81027256/183284160-229ebf0e-d5f0-4353-8c58-7af44e0b0107.png">
-<img width="922" alt="스크린샷 2022-08-07 18 11 12" src="https://user-images.githubusercontent.com/81027256/183284179-438d0f7b-cbd9-4816-90de-57b1f94f8b2e.png">
-<img width="810" alt="스크린샷 2022-08-07 18 11 22" src="https://user-images.githubusercontent.com/81027256/183284284-d84b54ab-49f9-485d-9531-b1c5a3b5d92e.png">
+
+```bash
+> git add .
+> git commit
+```
+
+<img alt="스크린샷1" src="https://github.com/user-attachments/assets/f1d59b6d-adc5-4c22-a2a6-1305c99e2287">
+
+<img alt="스크린샷2" src="https://github.com/user-attachments/assets/62c43a2e-d3d3-49ce-9850-dddd85592013">
+
+```bash
+git push
+```
+
+
 
 ## 사용 가능한 범위
 - Repository Template을 사용했을 때, 복사되는 범위는 현재 프로젝트의 디렉토리 및 구조, 브랜치 등까지 입니다. Issue나 Pull request의 Labels, Wiki, Project, Actions 등은 복사되지 않습니다.
