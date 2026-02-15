@@ -1,6 +1,10 @@
 # iOS-Repository-Template
 이 레포지토리는 iOS 프로젝트에 사용하기 위한 템플릿 레포지토리입니다.
 
+프로젝트에 Tuist를 기본으로 사용하게 설정했으며, 필요에 따라 Tuist 대신 다른 프로젝트 관리 도구를 사용하거나, 별도의 프로젝트 관리 도구를 사용하지 않아도 괜찮습니다.
+
+다른 프로젝트 관리 도구를 사용하거나, 프로젝트 관리 도구를 사용하지 않을 때에는 `.gitignore` 파일의 수정이 필요할 수 있습니다.
+
 ## 템플릿 사용 방법
 
 아래의 세가지 방법 중 하나를 선택하여 사용하시면 됩니다.
@@ -32,9 +36,63 @@
 4. 첫번째 commit을 생성한다.
 
    `git commit -a -m "Initial commit"`
-   
 
+## 프로젝트 구성
 
+```text
+iOS-Repository-Template/
+├── .git/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug.yml
+│   │   ├── chore.yml
+│   │   ├── config.yml
+│   │   ├── design.yml
+│   │   ├── docs.yml
+│   │   ├── enhancement.yml
+│   │   ├── feature.yml
+│   │   ├── refactor.yml
+│   │   ├── spike.yml
+│   │   └── test.yml
+│   ├── .gitmessage
+│   ├── CODEOWNERS
+│   └── PULL_REQUEST_TEMPLATE.md
+├── App/
+│   ├── Resources/
+│   ├── Sources/
+│   │   ├── ContentView.swift
+│   │   └── WRITEYOURPROJECTApp.swift
+│   └── Tests/
+├── Tuist/
+│   ├── .swiftpm
+│   └── Package.swift
+├── .gitignore
+├── mise.toml
+├── Project.swift
+├── README.md
+└── Tuist.swift
+```
+
+## Tuist 프로젝트 수정 방법
+
+Tuist 프로젝트 사용시 몇 가지 수정해야 하는 부분이 있습니다.
+
+원하는 프로젝트 이름을 적절한 이름으로 변경합니다.
+
+아래의 예시에서는 이해하기 쉬운 설명을 위해 `NewProjectName`라고 가정하고 설명했습니다.
+
+- `Project.swift` 내용 수정
+  - 파일 내부에서 `#[WRITE_YOUR_PROJECT_NAME]`이라고 적혀있는 부분을 모두 본인의 `NewProjectName`으로 변경합니다.
+  - `dev.tuist.projectname`이라고 적힌 `bundleId`를 모두 자신이 원하는 bundleId로 변경합니다. (ex. `com.example.newprojectname`)
+- `Tuist/Package.swift` 내용 수정
+  - 파일 내부에서 `#[WRITE_YOUR_PROJECT_NAME]`라고 적힌 부분을 `NewProjectName`으로 변경합니다.
+
+- `App/Sources/WRITEYOURPROJECTApp.swift` 수정
+  - `WRITEYOURPROJECTApp.swift` 부분을 `NewProjectNameApp.swift`로 변경합니다.
+  - 파일 내부의 struct 이름도 `NewProjectNameApp`으로 변경합니다.
+- `App/Tests/WRITEYOURPROJECTTests.swift` 수정
+  - `WRITEYOURPROJECTTests.swift` 부분을 `NewProjectNameTests.swift`로 변경합니다.
+  - 파일 내부의 import는 `import NewProjectName`로, struct 이름은 `NewProjectNameTests`로 변경합니다.
 
 ## 태그 구성
 
@@ -48,8 +106,6 @@
 - `type: docs`: 문서 작업(README/가이드/API 등)
 - `type: test`: 테스트 추가/보강/수정
 - `type: spike`: 조사/프로토타입/기술 검증
-
-
 
 ## .gitmessage 사용 방법
 
@@ -71,8 +127,6 @@ git config --global commit.template .github/.gitmessage
 ```bash
 > git push
 ```
-
-
 
 ## 사용 가능한 범위
 - Repository Template을 사용했을 때, 복사되는 범위는 현재 프로젝트의 디렉토리 및 구조, 브랜치 등까지 입니다. Issue나 Pull request의 Labels, Wiki, Project, Actions 등은 복사되지 않습니다.
