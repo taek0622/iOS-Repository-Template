@@ -127,7 +127,7 @@ tuist generate
 
 ## .gitmessage 사용 방법
 
-- 프로젝트를 Clone 받은 후 터미널 상에서 프로젝트 경로로 들어가서 아래의 명령어를 사용하여 `.gitmessage` 사용
+- 프로젝트를 Clone 받은 후 최초 한 번은 터미널 상에서 프로젝트 경로로 들어가서 아래의 명령어를 사용하여 `.gitmessage` 사용
 
 ```shell
 git config --global commit.template .github/.gitmessage
